@@ -18,7 +18,10 @@ h1{
 h3 {
     font-weight: 100;
 }
+#brand {
+    font-size: 20%
 
+}
 /*Header Animation*/
 
 /* GLOBAL STYLES */
@@ -61,7 +64,7 @@ html, body {
 }
 
 #userInput{
-    animation-delay: 6s;
+    animation-delay: 1s;
 }
 
 /* LAYOUT CSS */
@@ -81,10 +84,14 @@ html, body {
 }
 
 .sidebar {
+    
     background:#2A3132;
     color: #fff;
+    text-align: center
 }
-
+.moveIcon {
+    margin-left:9px
+}
 .palette{
     margin-right: 0px;
 }
@@ -94,15 +101,21 @@ html, body {
     margin: 0;
 }
 .brand-title {
+    text-align: center;
+    font-size: 130%;
     text-transform: uppercase;
+  
 }
 .brand-tagline {
     font-weight: 300;
+    font-size: 120%;
+    text-align: center;
     color:#90AFC5;
 }
 
-#sidebarText{
+.sidebarText{
     color:white;
+    text-align: center;
 }
 
 .nav-list {
@@ -201,41 +214,59 @@ html, body {
 button{
     border-radius: 2px;
     padding: 5px;
-    margin-left: 10px;
+    position: relative;
     background-color: #90AFC5;
     color: #2A3132;
-    animation-delay: 3s;
-    animation: fadeIn 2s forwards;
+   
 }
 
 button:hover {
-    background-color: #336B87; /* blue */
+    background-color: #336B87 blue;
     color: white;
-    transition: all 0.4s ease 0s;
-  }
+    transition: all 0s ease 0s;
+  } 
 
 #try{
     font-weight: bold;
     font-size: 18px;
-    animation: fadeIn 4s forwards;
+    animation: fadeIn .5s forwards;
 }
 
 #loadButton{
     border-radius: 2px;
+    margin-right: 12px;
     background-color: #90AFC5;
     color: #2A3132;
 }
 
 #saveButton{
     border-radius: 2px;
+    margin-right: 4px;
     background-color: #90AFC5;
     color: #2A3132;
+}
+
+.saveButtonInfo {
+    visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
 }
 
 #submitButton{
     border-radius: 2px;
     background-color: #90AFC5;
     color: #2A3132;
+}
+
+#contact-us{
+    text-align: center
 }
 
 .footer a {
@@ -285,23 +316,23 @@ button:hover {
 }
 
 .ani1{
-    animation: fadeIn1 5s
+    animation: fadeIn1 1s
 }
 
 .ani2{
-    animation:fadeIn2 5s
+    animation:fadeIn2 1s
 }
 
 .ani3{
-    animation:fadeIn3 5s
+    animation:fadeIn3 1s
 }
 
 .ani4{
-    animation:fadeIn4 5s    
+    animation:fadeIn4 1s    
 }
 
 .ani5{
-    animation:fadeIn5 5s    
+    animation:fadeIn5 1s    
 }
 
 @keyframes fadeIn1 {

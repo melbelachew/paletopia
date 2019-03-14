@@ -10,7 +10,7 @@ var getColors = (url) => {
     //appending request image to display div
     var img = $("<img>").attr("src", url).css("max-width", "100%").css("border-radius", "10px");
     $("#current-image").append(img);
-    $("#display").append($("<h1>")).text("sploading...");
+    $("#display").append($("<h1>")).text("Loading...");
     var loadingImg = ($("<img>")).attr('src','https://www.blackmores.com.au/App_Themes/AU/images/loading.gif')
     console.log(loadingImg)
     //$("#display").append
@@ -57,4 +57,4 @@ console.log(visionResponse);
     }
 }
 
-//getColors('https://picsum.photos/750/550/?random')
+getColors('https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')
