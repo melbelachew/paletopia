@@ -42,3 +42,9 @@ Thumbs.db
 #custom
 .rgbtohex.js
 unused/
+
+#google site verification
+siteVerification.html
+
+#api key
+config.js
